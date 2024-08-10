@@ -25,7 +25,7 @@ def drawdots(dots, vpx, vpy, scale):
   for j,k in dots:
     a,b = screen_coords(j, k, vpx, vpy, scale)
     if in_range(a,b):
-      pygame.draw.line(screen, c, (a,b), (a+1,b+1))
+      pygame.draw.line(screen, c, (a,b), (a,b))
 
 def drawlines(lines, vpx, vpy, scale):
   for l in lines:
